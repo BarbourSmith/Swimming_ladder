@@ -4859,6 +4859,10 @@
             {
               "name": "Shape 3",
               "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
             }
           ]
         },
@@ -4882,14 +4886,15 @@
             },
             {
               "name": "zDist",
-              "ioValue": -9
+              "ioValue": 0,
+              "currentEquation": "0"
             }
           ]
         },
         {
           "atomType": "Molecule",
-          "x": 0.10026455026455026,
-          "y": 0.8444444444444444,
+          "x": 0.21759259259259256,
+          "y": 0.48611111111111116,
           "uniqueID": "id-1607",
           "name": "Sides",
           "ioValues": [
@@ -4984,7 +4989,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -180
+                  "ioValue": -158
                 },
                 {
                   "name": "zDist",
@@ -5683,8 +5688,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.23412698412698413,
-          "y": 0.25277777777777777,
+          "x": 0.23544973544973544,
+          "y": 0.23333333333333334,
           "uniqueID": "id-1634",
           "name": "Base",
           "ioValues": [
@@ -6334,14 +6339,19 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2777777777777778,
-          "y": 0.8722222222222222,
+          "x": 0.1302910052910053,
+          "y": 0.8777777777777778,
           "uniqueID": "id-1830",
           "name": "Supports",
           "ioValues": [
             {
               "name": "Radius",
-              "ioValue": 10
+              "ioValue": 150,
+              "currentEquation": "150"
+            },
+            {
+              "name": "Wood_Thickness",
+              "ioValue": 18
             }
           ],
           "topLevel": false,
@@ -6360,14 +6370,14 @@
             },
             {
               "atomType": "GitHubMolecule",
-              "x": 0.19642857142857142,
-              "y": 0.611111111111111,
+              "x": 0.20701058201058203,
+              "y": 0.6194444444444445,
               "uniqueID": "id-1848",
               "name": "Quarter_Round",
               "ioValues": [
                 {
                   "name": "Diameter",
-                  "ioValue": 10
+                  "ioValue": 150
                 }
               ],
               "topLevel": false,
@@ -6399,7 +6409,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 10
+                      "ioValue": 150
                     }
                   ]
                 },
@@ -6411,11 +6421,11 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 20
+                      "ioValue": 300
                     },
                     {
                       "name": "y length",
-                      "ioValue": 20
+                      "ioValue": 300
                     }
                   ]
                 },
@@ -6428,7 +6438,7 @@
                   "ioValues": [
                     {
                       "name": "D",
-                      "ioValue": 10
+                      "ioValue": 150
                     }
                   ],
                   "currentEquation": "2*D"
@@ -6445,7 +6455,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 10
+                      "ioValue": 150
                     },
                     {
                       "name": "yDist",
@@ -6466,7 +6476,7 @@
                     {
                       "name": "Shape 1",
                       "ioValue": {
-                        "geometry": "move-rectangle-20-20-10-0-0",
+                        "geometry": "move-rectangle-300-300-150-0-0",
                         "dimension": "2D",
                         "plane": {
                           "origin": [
@@ -6493,7 +6503,7 @@
                     {
                       "name": "Shape 2",
                       "ioValue": {
-                        "geometry": "move-rectangle-20-20-0-10-0",
+                        "geometry": "move-rectangle-300-300-0-150-0",
                         "dimension": "2D",
                         "plane": {
                           "origin": [
@@ -6552,7 +6562,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 10
+                      "ioValue": 150
                     },
                     {
                       "name": "zDist",
@@ -6657,19 +6667,249 @@
             {
               "atomType": "Input",
               "x": 0.025384615384615384,
-              "y": 0.45555555555555555,
+              "y": 0.3666666666666667,
               "uniqueID": "id-1879",
               "name": "Radius"
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3472222222222222,
+              "y": 0.6388888888888888,
+              "uniqueID": "id-1882",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 18
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.7583333333333333,
+              "uniqueID": "id-1886",
+              "name": "Wood_Thickness",
+              "type": "number"
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.5105820105820106,
+              "y": 0.5944444444444444,
+              "uniqueID": "id-1889",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 90,
+                  "currentEquation": "90"
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.636904761904762,
+              "y": 0.861111111111111,
+              "uniqueID": "id-1895",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 100,
+                  "currentEquation": "100"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.8088624338624338,
+              "y": 0.7444444444444444,
+              "uniqueID": "id-1901",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                }
+              ]
             }
           ],
           "allConnectors": [
             {
+              "ap2Name": "geometry",
+              "ap1ID": "id-1848",
+              "ap2ID": "id-1882"
+            },
+            {
               "ap2Name": "Diameter",
               "ap1ID": "id-1879",
               "ap2ID": "id-1848"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-1882",
+              "ap2ID": "id-1889"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-1886",
+              "ap2ID": "id-1882"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-1889",
+              "ap2ID": "id-1895"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-1889",
+              "ap2ID": "id-1901"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-1895",
+              "ap2ID": "id-1901"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-1901",
+              "ap2ID": "id-1832"
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.20304232804232802,
+          "y": 0.675,
+          "uniqueID": "id-1906",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -150,
+              "currentEquation": "-150"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -209
+            },
+            {
+              "name": "zDist",
+              "ioValue": 18
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.06547619047619048,
+          "y": 0.625,
+          "uniqueID": "id-1912",
+          "name": "-200-T/2",
+          "ioValues": [
+            {
+              "name": "T",
+              "ioValue": 18
+            }
+          ],
+          "currentEquation": "-200-T/2"
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.24206349206349206,
+          "y": 0.9111111111111111,
+          "uniqueID": "id-1918",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 180,
+              "currentEquation": "180"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.47685185185185186,
+          "y": 0.9111111111111111,
+          "uniqueID": "id-1924",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.3313492063492064,
+          "y": 0.8638888888888889,
+          "uniqueID": "id-1930",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -6717,6 +6957,56 @@
           "ap2Name": "Wood_Thickness",
           "ap1ID": "id-1826",
           "ap2ID": "id-1607"
+        },
+        {
+          "ap2Name": "Wood_Thickness",
+          "ap1ID": "id-1826",
+          "ap2ID": "id-1830"
+        },
+        {
+          "ap2Name": "T",
+          "ap1ID": "id-1826",
+          "ap2ID": "id-1912"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-1826",
+          "ap2ID": "id-1906"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1830",
+          "ap2ID": "id-1906"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-1906",
+          "ap2ID": "id-1605"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1906",
+          "ap2ID": "id-1918"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1906",
+          "ap2ID": "id-1924"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-1906",
+          "ap2ID": "id-1930"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-1912",
+          "ap2ID": "id-1906"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-1918",
+          "ap2ID": "id-1930"
         }
       ],
       "fileTypeVersion": 1
