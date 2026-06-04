@@ -2,4 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|Swim Ladder Hinge|1|$100.00|[Amazon](https://www.amazon.com/Laorde-Stainless-Hinges-Casting-Cabinet/dp/B0CG17WC8P?tag=maslowcnc01-20)|
+|Total: |1|$100.00| |
