@@ -4237,8 +4237,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.25925925925925924,
-          "y": 0.30919220055710306,
+          "x": 0.27116402116402116,
+          "y": 0.34818941504178275,
           "uniqueID": "id-9363",
           "name": "Lower Steps",
           "ioValues": [
@@ -5726,14 +5726,15 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 10,
+                  "currentEquation": "10"
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.4933862433862434,
-              "y": 0.6991643454038997,
+              "x": 0.5,
+              "y": 0.6880222841225626,
               "uniqueID": "id-9835",
               "ioValues": [
                 {
@@ -5836,31 +5837,6 @@
               ]
             },
             {
-              "atomType": "Rotate",
-              "x": 0.7328042328042328,
-              "y": 0.5821727019498607,
-              "uniqueID": "id-9852",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "x-axis degrees",
-                  "ioValue": 90,
-                  "currentEquation": "90"
-                },
-                {
-                  "name": "y-axis degrees",
-                  "ioValue": 0
-                },
-                {
-                  "name": "z-axis degrees",
-                  "ioValue": 0
-                }
-              ]
-            },
-            {
               "atomType": "Move",
               "x": 0.8101851851851852,
               "y": 0.5821727019498607,
@@ -5877,13 +5853,13 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -192,
-                  "currentEquation": "-192"
+                  "ioValue": -242,
+                  "currentEquation": "-192-50"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 18,
-                  "currentEquation": "18"
+                  "ioValue": 10,
+                  "currentEquation": "10"
                 }
               ]
             },
@@ -6011,13 +5987,13 @@
             },
             {
               "ap2Name": "geometry",
-              "ap1ID": "id-9820",
-              "ap2ID": "id-9852"
+              "ap1ID": "id-9823",
+              "ap2ID": "id-9829"
             },
             {
               "ap2Name": "geometry",
               "ap1ID": "id-9823",
-              "ap2ID": "id-9829"
+              "ap2ID": "id-9853"
             },
             {
               "ap2Name": "Shape 2",
@@ -6033,11 +6009,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-9846",
               "ap2ID": "id-9816"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-9852",
-              "ap2ID": "id-9853"
             },
             {
               "ap2Name": "Shape 1",
