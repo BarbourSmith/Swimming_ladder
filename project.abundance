@@ -5722,7 +5722,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 192
+                  "ioValue": 188
                 },
                 {
                   "name": "zDist",
@@ -5838,7 +5838,7 @@
             },
             {
               "atomType": "Move",
-              "x": 0.8101851851851852,
+              "x": 0.806878306878307,
               "y": 0.5821727019498607,
               "uniqueID": "id-9853",
               "ioValues": [
@@ -5853,8 +5853,8 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -242,
-                  "currentEquation": "-192-50"
+                  "ioValue": -238,
+                  "currentEquation": "-188-50"
                 },
                 {
                   "name": "zDist",
@@ -6022,6 +6022,171 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.6944444444444444,
+          "y": 0.7409470752089137,
+          "uniqueID": "id-9885",
+          "name": "Extract Not Keep Out",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [],
+          "includeUntagged": false,
+          "notKeepOut": true
+        },
+        {
+          "atomType": "CutOrient",
+          "x": 0.8042328042328042,
+          "y": 0.7604456824512534,
+          "uniqueID": "id-9888",
+          "name": "Cut Orient",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "orientations": [
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 4
+            },
+            {
+              "downwardFaceIndex": 12
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 3
+            },
+            {
+              "downwardFaceIndex": 1
+            }
+          ],
+          "orientationsForHashed": 9
+        },
+        {
+          "atomType": "CutLayout",
+          "x": 0.8763227513227514,
+          "y": 0.8105849582172702,
+          "uniqueID": "id-9891",
+          "name": "Cut Layout",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Sheet Width",
+              "ioValue": 2438
+            },
+            {
+              "name": "Sheet Height",
+              "ioValue": 1219
+            },
+            {
+              "name": "Part Padding",
+              "ioValue": 10
+            },
+            {
+              "name": "Orientations",
+              "ioValue": 12
+            }
+          ],
+          "placements": [
+            [
+              {
+                "id": 4,
+                "rotate": 180,
+                "translate": {
+                  "x": 1159.18994140625,
+                  "y": 80.19000244140625
+                }
+              },
+              {
+                "id": 0,
+                "rotate": 30,
+                "translate": {
+                  "x": 275.26751708984375,
+                  "y": -94.41845703125
+                }
+              },
+              {
+                "id": 7,
+                "rotate": 300,
+                "translate": {
+                  "x": -647.9180297851562,
+                  "y": 1886.814208984375
+                }
+              },
+              {
+                "id": 6,
+                "rotate": 90,
+                "translate": {
+                  "x": 80.4000015258789,
+                  "y": -420.45001220703125
+                }
+              },
+              {
+                "id": 8,
+                "rotate": 0,
+                "translate": {
+                  "x": -1034.64990234375,
+                  "y": 366.7200012207031
+                }
+              },
+              {
+                "id": 2,
+                "rotate": 150,
+                "translate": {
+                  "x": 1821.841552734375,
+                  "y": 109.15716552734375
+                }
+              },
+              {
+                "id": 5,
+                "rotate": 330,
+                "translate": {
+                  "x": -966.1122436523438,
+                  "y": 833.4451293945312
+                }
+              },
+              {
+                "id": 1,
+                "rotate": 120,
+                "translate": {
+                  "x": 1761.9854736328125,
+                  "y": 377.57733154296875
+                }
+              },
+              {
+                "id": 3,
+                "rotate": 150,
+                "translate": {
+                  "x": 976.6499633789062,
+                  "y": 458.8331298828125
+                }
+              }
+            ]
+          ]
         }
       ],
       "allConnectors": [
@@ -6044,6 +6209,11 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-1605",
           "ap2ID": "id-1601"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1605",
+          "ap2ID": "id-9885"
         },
         {
           "ap2Name": "Shape 3",
@@ -6159,6 +6329,16 @@
           "ap2Name": "geometry",
           "ap1ID": "id-9363",
           "ap2ID": "id-2527"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-9885",
+          "ap2ID": "id-9888"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-9888",
+          "ap2ID": "id-9891"
         }
       ],
       "fileTypeVersion": 1
