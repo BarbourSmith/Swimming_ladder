@@ -291,14 +291,15 @@
             },
             {
               "name": "zDist",
-              "ioValue": -180
+              "ioValue": -140,
+              "currentEquation": "-140"
             }
           ]
         },
         {
           "atomType": "Rotate",
-          "x": 0.3697089947089947,
-          "y": 0.15277777777777776,
+          "x": 0.3723544973544973,
+          "y": 0.11420612813370473,
           "uniqueID": "id-2157",
           "ioValues": [
             {
@@ -6284,8 +6285,8 @@
                 },
                 {
                   "name": "distX",
-                  "ioValue": 170,
-                  "currentEquation": "170"
+                  "ioValue": 160,
+                  "currentEquation": "160"
                 },
                 {
                   "name": "distY",
@@ -6444,7 +6445,7 @@
                     },
                     {
                       "name": "distX",
-                      "ioValue": 170
+                      "ioValue": 160
                     },
                     {
                       "name": "distY",
