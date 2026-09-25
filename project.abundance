@@ -584,7 +584,8 @@
         },
         {
           "name": "Cut Through",
-          "ioValue": 0
+          "ioValue": 1.5,
+          "currentEquation": "1.5"
         },
         {
           "name": "Part Name",
