@@ -2,7 +2,7 @@
 
 # Swimming_ladder
 
-![](/project.svg)
+![](/project.png)
 
 ## Inputs
 
