@@ -2,4 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|50mm 1/2 20 bolt|4|$2.00||
+|Total: |4|$2.00| |
